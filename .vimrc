@@ -4,6 +4,7 @@ set rtp+=~/vimfiles/bundle/Vundle.vim
 set encoding=utf-8
 set shiftwidth=4
 set tabstop=4
+set belloff=all
 call vundle#begin('~/vimfiles/bundle')
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -42,13 +43,12 @@ set backspace=indent,eol,start
 syntax on
 
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.swp$']
 
 set omnifunc=syntaxcomplete#Complete
 
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|build)|(\.(swp|ico|git|svn))$'
+
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|build|.git)|(\.(swp|ico|git|svn))$'
 
 
-" Nerdtree config
 let NERDTreeShowHidden=1
-
-
