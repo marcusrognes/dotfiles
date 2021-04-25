@@ -9,7 +9,7 @@ set spell
 set spelllang=nb,en
 let mapleader=" "
 set updatetime=500
-set term=xterm
+" set term=xterm
 set mouse=a
 call vundle#begin('~/vimfiles/bundle')
 " let Vundle manage Vundle, required
