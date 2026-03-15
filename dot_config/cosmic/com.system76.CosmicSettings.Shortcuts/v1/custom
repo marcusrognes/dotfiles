@@ -1,0 +1,49 @@
+{
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "q",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "g",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "Return",
+        description: Some("Zen"),
+    ): Spawn("flatpak run app.zen_browser.zen"),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "f",
+    ): ToggleWindowFloating,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "q",
+    ): Close,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "f",
+    ): Maximize,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "Return",
+        description: Some("Term"),
+    ): Spawn("cosmic-term"),
+}
